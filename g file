@@ -7,14 +7,14 @@ choices = list(emojis.keys())  # Dodaj nawiasy po `keys()` — kluczowy błąd!
 while True:
     user_choice = input("Choose (rock, paper, scissors): ")
     computer_choice = random.choice(choices)
-    
+
     if user_choice not in choices:
         print("You want to choose what?!")
         continue  # Kontynuuj zamiast wychodzić z gry
-    
+
     print(f"You chose {emojis[user_choice]}")
     print(f"Computer chose {emojis[computer_choice]}")
-    
+
     if user_choice == computer_choice:
         print("Draw!")
     elif (user_choice == 'rock' and computer_choice == 'scissors') or \
@@ -23,13 +23,16 @@ while True:
         print("You win!")
     else:
         print("You lose!")
-    
+
     play_again = input("Play once more? (yes/no): ")
     if play_again.lower() != 'yes':
         print("Thanks for playing!")
         break
-    else: 
+    else:
         print("Let's go")
 
-# good
+# go'od
 
+
+x = 1
+y = 1
